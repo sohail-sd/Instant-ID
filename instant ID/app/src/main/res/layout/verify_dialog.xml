@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/privateKeyLayout"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginHorizontal="16dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/privatekeyEt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:drawablePadding="4dp"
+            android:hint="Private Key"
+            android:inputType="text" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/publicKeyLayout"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/privateKeyLayout"
+        android:layout_marginHorizontal="16dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/publickeyEt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:drawablePadding="4dp"
+            android:hint="Public Key"
+            android:inputType="text" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/verifybutton"
+        android:layout_width="376dp"
+        android:layout_height="34dp"
+        android:layout_below="@id/publicKeyLayout"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/blue_primary"
+        android:text="Verify"
+        android:textColor="@color/s_light"
+        android:textStyle="bold" />
+
+
+
+</RelativeLayout>

@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/homepage1"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@color/primary_light"
+        android:backgroundTint="@color/blue_primary"
+        app:cardCornerRadius="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.162"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.729">
+
+        <ImageView
+            android:id="@+id/up"
+            android:layout_width="82dp"
+            android:layout_height="65dp"
+            android:layout_margin="11dp"
+            android:adjustViewBounds="true"
+            android:src="@drawable/cloud_upload" />
+
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@color/primary_light"
+        android:backgroundTint="@color/blue_primary"
+        app:cardCornerRadius="15dp"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.895"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.729">
+
+        <ImageView
+            android:id="@+id/down"
+            android:layout_width="82dp"
+            android:layout_height="65dp"
+            android:layout_margin="11dp"
+            android:adjustViewBounds="true"
+            android:src="@drawable/cloud_download" />
+
+
+    </androidx.cardview.widget.CardView>
+
+    <ImageView
+        android:id="@+id/showimage"
+
+        android:layout_width="348dp"
+        android:layout_height="190dp"
+        app:layout_constraintBottom_toTopOf="@+id/cardView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.81"
+        android:src="@drawable/smartdisplay"
+        />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/inidapplication"
+        android:layout_width="336dp"
+        android:layout_height="48dp"
+        android:layout_marginHorizontal="16dp"
+        android:background="@color/blue_primary"
+        android:text="In-ID Application"
+        android:textColor="@color/s_light"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.666"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/showimage"
+        app:layout_constraintVertical_bias="0.689" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floatingActionButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.915"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/inidapplication"
+        app:layout_constraintVertical_bias="0.722"
+        app:srcCompat="@drawable/logout" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
